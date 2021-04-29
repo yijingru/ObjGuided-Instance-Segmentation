@@ -2,7 +2,7 @@
 Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images
 
 Please cite the article in your publications if it helps your research:
-
+`
 	@article{yi2021tmi,
 	  title={Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images},
 	  author={Yi, Jingru and Wu, Pengxiang and and Tang, Hui and Liu, Bo and Huang, Qiaoying and Qu, Hui and Han, Lianyi and Fan, wei and Hoeppner, Daniel J and Metaxas, Dimitris N},
@@ -20,18 +20,23 @@ Instance segmentation is of great importance for many biological applications, s
 CUDA Version: 11.2, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36 
 
 # How to start
+1. Create YourDatasetClass, for example, `dataset_neural.py` in `datasets`.
+2. Import YourDatasetClass in `module.py`, for example `from datasets.dataset_neural import Neural`.
+3. Create a YourDatasetName and make correspondence between the YourDatasetName and YourDatasetClass in `module.py`,  for example `self.dataset = {'kaggle':Kaggle, 'plant':Plant, 'neural': Neural}`
+4. Use the YourDatasetName you created in the following commands.
+
 ## Train the model
 ```ruby
-python main.py --phase train --num_epoch 100 --data_dir YourDataPath --dataset YourDatasetClass --ngpus 0 --batch_size 8 --num_workers 4 
+python main.py --phase train --num_epoch 100 --data_dir YourDataPath --dataset YourDatasetName --ngpus 0 --batch_size 8 --num_workers 4 
 ```
 
 ## Test the model
 ```ruby
-python main.py --phase test --data_dir YourDataPath --dataset YourDatasetClass
+python main.py --phase test --data_dir YourDataPath --dataset YourDatasetName
 ```
 
 
 ## Evaluate the model
 ```ruby
-python main.py --phase test --data_dir YourDataPath --dataset YourDatasetClass --eval_type seg --seg_thresh 0.5
+python main.py --phase test --data_dir YourDataPath --dataset YourDatasetName --eval_type seg --seg_thresh 0.5
 ```
