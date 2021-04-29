@@ -38,5 +38,5 @@ python main.py --phase test --data_dir YourDataPath --dataset YourDatasetName
 
 ## Evaluate the model
 ```ruby
-python main.py --phase test --data_dir YourDataPath --dataset YourDatasetName --eval_type seg --seg_thresh 0.5
+python main.py --phase eval --data_dir YourDataPath --dataset YourDatasetName --eval_type seg --seg_thresh 0.5
 ```
