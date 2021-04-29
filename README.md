@@ -23,7 +23,7 @@ CUDA Version: 11.2, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36
 # How to start
 1. Create `YourDatasetClass`, for example, `dataset_neural.py` in `datasets`.
 2. Import `YourDatasetClass` in `module.py`, for example `from datasets.dataset_neural import Neural`.
-3. Create a `YourDatasetName` and make correspondence between the `YourDatasetName` and `YourDatasetClass` in `module.py`,  for example `self.dataset = {'kaggle':Kaggle, 'plant':Plant, 'neural': Neural}`
+3. Create a `YourDatasetName` and make correspondence between the `YourDatasetName` and `YourDatasetClass` in `module.py`,  for example `self.dataset = {YourDatasetName:YourDatasetClass, 'neural': Neural}`
 4. Use the `YourDatasetName` you created in the following commands.
 
 ## Train the model
