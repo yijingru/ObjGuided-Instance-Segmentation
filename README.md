@@ -3,11 +3,11 @@ Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biolog
 
 Please cite the article in your publications if it helps your research:
 ```
-	@article{yi2021tmi,
-	  title={Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images},
-	  author={Yi, Jingru and Wu, Pengxiang and and Tang, Hui and Liu, Bo and Huang, Qiaoying and Qu, Hui and Han, Lianyi and Fan, wei and Hoeppner, Daniel J and Metaxas, Dimitris N},
-	  journal={IEEE Transactions on Medical Imaging}
-	}
+@article{yi2021tmi,
+	title={Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images},
+	author={Yi, Jingru and Wu, Pengxiang and and Tang, Hui and Liu, Bo and Huang, Qiaoying and Qu, Hui and Han, Lianyi and Fan, wei and Hoeppner, Daniel J and Metaxas, Dimitris N},
+	journal={IEEE Transactions on Medical Imaging}
+}
 ```
 
 # Introduction
