@@ -1,5 +1,5 @@
 # ObjGuided-Instance-Segmentation
-Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images
+Object-Guided Instance Segmentation With Auxiliary Feature Refinement for Biological Images ([IEEE Xplore](https://ieeexplore.ieee.org/document/9422782))
 
 Please cite the article in your publications if it helps your research:
 ```
